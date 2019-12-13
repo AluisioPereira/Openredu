@@ -11,7 +11,8 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20170928125123) do
+#ActiveRecord::Schema.define(:version => 20170928125123) do
+ActiveRecord::Schema.define(:version => 20190422124547) do
 
   create_table "alternatives", :force => true do |t|
     t.text     "text"
@@ -222,6 +223,7 @@ ActiveRecord::Schema.define(:version => 20170928125123) do
     t.datetime "created_at",                                 :null => false
     t.datetime "updated_at",                                 :null => false
     t.integer  "livredoc_id"
+    t.boolean  "downloadable",            :default => false
   end
 
   create_table "educations", :force => true do |t|
